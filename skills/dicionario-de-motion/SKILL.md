@@ -1,6 +1,6 @@
 ---
 name: dicionario-de-motion
-description: Traduz pedidos de animação em português ("faz o número quicar", "entra um depois do outro", "dá um tranco no zoom") para o efeito de motion graphics certo, com o termo técnico, a duração e a aceleração. Use sempre que o usuário pedir animação, motion, transição ou efeito em vídeo, HTML, CSS, GSAP, Remotion, HyperFrames ou After Effects, principalmente quando o pedido for vago ("faz uma animação bonita").
+description: Traduz pedidos de animação em português ("faz o número quicar", "entra um depois do outro", "dá um tranco no zoom") para o efeito de motion graphics certo, com o termo técnico, a duração e a aceleração. Use sempre que o usuário pedir animação, motion, transição ou efeito em vídeo, HTML, CSS, GSAP, Remotion, HyperFrames ou After Effects, principalmente quando o pedido for vago ("faz uma animação bonita") ou o vídeo for de canal dark (faceless) de curiosidades, história ou documentário.
 ---
 
 # Dicionário de motion
@@ -59,6 +59,24 @@ Quem pede animação em português raramente usa o nome técnico do efeito. Esta
 | 22 | Zoom de impacto | punch zoom | "dar um soco no zoom", "zoom de impacto", "tranco" | 100% → 115% em 0,15 s e assenta em 0,3 s, na batida ou na palavra forte |
 | 23 | Barra crescendo | bar grow | "barra subindo", "gráfico crescendo" | `scaleY` 0 → 1 com origem embaixo, 0,6 s, `power3.out`, em cascata |
 | 24 | Uma forma vira outra | morph | "virar", "se transformar", "mudar de forma" | morph de path SVG (mesmo número de pontos), 0,6 s, `power2.inOut` |
+
+## Receitas pra canal dark (faceless)
+
+Quando o vídeo for de curiosidade, história, mistério, ciência ou documentário, sugira estas combinações:
+
+- **Gancho da abertura:** word reveal (15) + punch zoom (22) na palavra mais forte.
+- **Data ou época:** mask reveal (20) no ano + blur in (05) no subtítulo.
+- **Número de impacto:** count-up (14) + punch zoom (22) quando o número para.
+- **Mapa e viagem:** draw-on (19) na rota + pulse (12) no ponto de chegada.
+- **Antes e depois:** wipe (21).
+- **Dados ao longo do tempo:** bar grow (23) em stagger (06).
+- **Citação ou documento:** typewriter (13) + highlight (17) no trecho principal.
+- **Tópicos do vídeo:** stagger (06) + slide in (02).
+- **Troca de capítulo:** wipe (21) ou mask reveal (20).
+- **Fim do vídeo (inscreva-se):** pop in (03) + pulse (12).
+- **Foto parada:** Ken Burns (zoom lento de uns 5% em 6 s, `sine.inOut`). Não está entre os 24, mas é o efeito mais comum em documentário.
+
+Sincronize cada efeito com a palavra da narração que ele ilustra.
 
 ## Regras que evitam animação feia
 
