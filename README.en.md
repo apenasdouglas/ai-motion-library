@@ -1,4 +1,4 @@
-# apenasdouglas Motion Dictionary · animation effects to ask AI for
+# apenasdouglas Motion Library · animation effects to ask AI for
 
 **[Português](README.md)** · **Current version: Documentary (Documental)**
 
@@ -10,13 +10,26 @@ Here are **24 motion graphics effects** with the technical term to use in your p
 
 The project is written in Brazilian Portuguese first. The skill understands requests in Portuguese and English.
 
+**Dark theme**
+
 <p>
-  <img src="versoes/documental/assets/dicionario-1-entradas.gif" width="49%" alt="Entrances: fade in, slide in, pop in, scale up, blur in, stagger">
-  <img src="versoes/documental/assets/dicionario-2-ritmo.gif" width="49%" alt="Rhythm: overshoot, bounce, spring, ease in-out, elastic, pulse">
+  <img src="versoes/documental/assets/escuro/biblioteca-1-entradas.gif" width="49%" alt="Entrances: fade in, slide in, pop in, scale up, blur in, stagger">
+  <img src="versoes/documental/assets/escuro/biblioteca-2-ritmo.gif" width="49%" alt="Rhythm: overshoot, bounce, spring, ease in-out, elastic, pulse">
 </p>
 <p>
-  <img src="versoes/documental/assets/dicionario-3-texto-e-numeros.gif" width="49%" alt="Text and numbers: typewriter, count-up, word reveal, ticker, highlight, text swap">
-  <img src="versoes/documental/assets/dicionario-4-formas-e-transicoes.gif" width="49%" alt="Shapes and transitions: draw-on, mask reveal, wipe, punch zoom, bar grow, morph">
+  <img src="versoes/documental/assets/escuro/biblioteca-3-texto-e-numeros.gif" width="49%" alt="Text and numbers: typewriter, count-up, word reveal, ticker, highlight, text swap">
+  <img src="versoes/documental/assets/escuro/biblioteca-4-formas-e-transicoes.gif" width="49%" alt="Shapes and transitions: draw-on, mask reveal, wipe, punch zoom, bar grow, morph">
+</p>
+
+**Light theme**
+
+<p>
+  <img src="versoes/documental/assets/claro/biblioteca-1-entradas.gif" width="49%" alt="Light theme, entrances">
+  <img src="versoes/documental/assets/claro/biblioteca-2-ritmo.gif" width="49%" alt="Light theme, rhythm">
+</p>
+<p>
+  <img src="versoes/documental/assets/claro/biblioteca-3-texto-e-numeros.gif" width="49%" alt="Light theme, text and numbers">
+  <img src="versoes/documental/assets/claro/biblioteca-4-formas-e-transicoes.gif" width="49%" alt="Light theme, shapes and transitions">
 </p>
 
 ## The 24 effects
@@ -67,24 +80,28 @@ The Portuguese page ([README.md](README.md)) also lists the Portuguese name of e
 
 Not in the list, but the most common effect in documentaries: a slow zoom on a still photo, the Ken Burns effect ("slow Ken Burns on the photo, about 5% over 6 s").
 
+## Color and theme
+
+Red (`#E5352A`) and the dark theme are just the defaults. With the skill installed, pick your brand color by name ("use blue and the light theme"), by hex ("use `#2F6FED`") or as command arguments: `/biblioteca-de-motion-documental cor #2F6FED tema claro`. Named colors: red `#E5352A`, blue `#2F6FED`, green `#1F9D60`, yellow `#E2A925`, orange `#EE6A24`, purple `#7C4DFF`.
+
 ## Install
 
-**Download without git:** go to [Releases](https://github.com/apenasdouglas/ai-motion-dictionary/releases) and download the `.zip` of the version you want.
+**Download without git:** go to [Releases](https://github.com/apenasdouglas/ai-motion-library/releases) and download the `.zip` of the version you want.
 
 **Claude Code, for all your projects:**
 
 ```bash
-git clone https://github.com/apenasdouglas/ai-motion-dictionary.git
+git clone https://github.com/apenasdouglas/ai-motion-library.git
 mkdir -p ~/.claude/skills
-cp -r ai-motion-dictionary/versoes/documental/dicionario-de-motion-documental ~/.claude/skills/
+cp -r ai-motion-library/versoes/documental/biblioteca-de-motion-documental ~/.claude/skills/
 ```
 
-**Other tools (Cursor, Codex, ChatGPT):** paste the content of [`SKILL.md`](versoes/documental/dicionario-de-motion-documental/SKILL.md) into your project instructions.
+**Other tools (Cursor, Codex, ChatGPT):** paste the content of [`SKILL.md`](versoes/documental/biblioteca-de-motion-documental/SKILL.md) into your project instructions.
 
 ## Credits
 
 - Inspired by the Japanese motion effects catalog by [@showheyohtaki](https://x.com/showheyohtaki).
-- Made by Douglas Januário ([@douglasjanuario](https://x.com/douglasjanuario) on X). Demo videos generated with AI using [HyperFrames](https://hyperframes.heygen.com) by HeyGen.
+- Made by Douglas Januário ([@douglasjanuario](https://x.com/douglasjanuario) on X). Demo videos generated with AI using [HyperFrames](https://hyperframes.heygen.com) by HeyGen, with the Playfair Display and Inter fonts (OFL).
 
 ## License
 

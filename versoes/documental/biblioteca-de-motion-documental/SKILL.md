@@ -1,9 +1,9 @@
 ---
-name: dicionario-de-motion-documental
+name: biblioteca-de-motion-documental
 description: Traduz pedidos de animação em português ("faz o número quicar", "entra um depois do outro", "dá um tranco no zoom") para o efeito de motion graphics certo, com o termo técnico, a duração e a aceleração. Use sempre que o usuário pedir animação, motion, transição ou efeito em vídeo, HTML, CSS, GSAP, Remotion, HyperFrames ou After Effects, principalmente quando o pedido for vago ("faz uma animação bonita") ou o vídeo for de canal dark (faceless) de curiosidades, história ou documentário. Also triggers on English requests for motion graphics, easing and animation effects in documentary or faceless YouTube videos.
 ---
 
-# Dicionário de Motion apenasdouglas · Versão Documental
+# Biblioteca de Motion apenasdouglas · Versão Documental
 
 Quem pede animação em português raramente usa o nome técnico do efeito. Esta skill faz a ponte: identifica o efeito pelo jeito que a pessoa fala, aplica o termo certo e usa parâmetros que funcionam de primeira.
 
@@ -11,7 +11,7 @@ Quem pede animação em português raramente usa o nome técnico do efeito. Esta
 
 1. Leia o pedido e procure as expressões da coluna "como a pessoa fala" na tabela abaixo.
 2. Se achou, aplique o efeito com os parâmetros padrão. Ajuste só se o pedido disser outra coisa (duração, direção, intensidade).
-3. **Se o pedido for vago** ("faz bonito", "dá uma animada", "deixa mais dinâmico"), não invente. Proponha 2 ou 3 efeitos do dicionário pelo nome em português e pelo termo, dizendo onde cada um entraria, e espere a escolha.
+3. **Se o pedido for vago** ("faz bonito", "dá uma animada", "deixa mais dinâmico"), não invente. Proponha 2 ou 3 efeitos da biblioteca pelo nome em português e pelo termo, dizendo onde cada um entraria, e espere a escolha.
 4. Ao entregar, diga o nome do efeito que usou, nos dois idiomas. Assim a pessoa aprende o vocabulário e pede direto da próxima vez.
 
 ## Os 24 efeitos
@@ -77,6 +77,15 @@ Quando o vídeo for de curiosidade, história, mistério, ciência ou documentá
 - **Foto parada:** Ken Burns (zoom lento de uns 5% em 6 s, `sine.inOut`). Não está entre os 24, mas é o efeito mais comum em documentário.
 
 Sincronize cada efeito com a palavra da narração que ele ilustra.
+
+## Cor e tema
+
+- **Padrão:** acento vermelho `#E5352A`, tema escuro (fundo `#0E1110`, texto branco).
+- **O usuário escolhe** pelo nome ("usa azul"), pelo hexadecimal ("usa `#2F6FED`") ou nos argumentos do comando (`cor #2F6FED tema claro`). Guarde a escolha e use em todas as animações da conversa.
+- **Cores com nome:** vermelho `#E5352A`, azul `#2F6FED`, verde `#1F9D60`, amarelo `#E2A925`, laranja `#EE6A24`, roxo `#7C4DFF`.
+- **Tema claro:** fundo creme (`#F5F0E6`), texto quase preto quente (`#1A1512`).
+- **Contraste:** o acento pode ir em texto grande e em formas. Em texto pequeno, se o contraste ficar abaixo de 4,5:1 com o fundo, escureça o acento (no claro) ou clareie (no escuro) até passar. Texto sobre um bloco do acento: use a cor do fundo ou um tom quase preto, o que passar.
+- Ponha a cor numa variável só (por exemplo `--acento`), pra trocar depois sem caçar no código.
 
 ## Regras que evitam animação feia
 
