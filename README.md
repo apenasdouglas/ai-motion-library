@@ -1,4 +1,4 @@
-# Dicionário de Motion DJ · efeitos de animação pra pedir pra IA
+# Dicionário de Motion apenasdouglas · efeitos de animação pra pedir pra IA
 
 **[English](README.en.md)** · **Versão atual: Documental**
 

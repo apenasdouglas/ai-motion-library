@@ -1,4 +1,4 @@
-# Dicionário de Motion DJ · Versão Documental
+# Dicionário de Motion apenasdouglas · Versão Documental
 
 Versão pra canal dark (faceless) de curiosidades, história, mistério, ciência e documentário.
 
