@@ -1,23 +1,29 @@
-# Dicionário de motion pra pedir pra IA
+# Dicionário de Motion DJ · efeitos de animação pra pedir pra IA
+
+**[English](README.en.md)** · **Versão atual: Documental**
+
+![pt-BR](https://img.shields.io/badge/idioma-pt--BR-E5352A) ![24 efeitos](https://img.shields.io/badge/efeitos-24-E5352A) ![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-161A18)
 
 Pedir pra IA "faz uma animação bonita" não funciona. Ela precisa saber o nome do efeito, igual um editor de vídeo de verdade.
 
-Aqui estão 24 efeitos de animação com o nome em português, o termo que você usa no pedido e um exemplo pronto pra copiar. Foi pensado pra quem tem ou quer ter um **canal dark no YouTube** (sem aparecer) de curiosidades, história, mistério, ciência ou documentário, e precisa que o vídeo tenha movimento sem contratar um editor de motion. Os vídeos desta página também foram feitos pela IA.
+Aqui estão **24 efeitos de motion graphics** com o nome em português, o termo que você usa no pedido e um exemplo pronto pra copiar, mais **receitas por cena** e uma **skill pro Claude Code**. Foi pensado pra quem tem ou quer ter um **canal dark no YouTube** (faceless, sem aparecer) de curiosidades, história, mistério, ciência ou documentário, e precisa que o vídeo tenha movimento sem contratar um editor de motion. Os vídeos desta página também foram feitos pela IA.
 
 <p>
-  <img src="assets/dicionario-1-entradas.gif" width="49%" alt="Entradas: surgir, deslizar, aparecer com salto, crescer, do borrado ao nítido, cascata">
-  <img src="assets/dicionario-2-ritmo.gif" width="49%" alt="Ritmo: passa do ponto e volta, quicar, mola, acelera e freia, elástico, pulsar">
+  <img src="versoes/documental/assets/dicionario-1-entradas.gif" width="49%" alt="Entradas: surgir, deslizar, aparecer com salto, crescer, do borrado ao nítido, cascata">
+  <img src="versoes/documental/assets/dicionario-2-ritmo.gif" width="49%" alt="Ritmo: passa do ponto e volta, quicar, mola, acelera e freia, elástico, pulsar">
 </p>
 <p>
-  <img src="assets/dicionario-3-texto-e-numeros.gif" width="49%" alt="Texto e números: máquina de escrever, número contando, palavra por palavra, letreiro rolando, grifar, trocar a palavra">
-  <img src="assets/dicionario-4-formas-e-transicoes.gif" width="49%" alt="Formas e transições: traço se desenhando, revelar por máscara, cortina, zoom de impacto, barra crescendo, uma forma vira outra">
+  <img src="versoes/documental/assets/dicionario-3-texto-e-numeros.gif" width="49%" alt="Texto e números: máquina de escrever, número contando, palavra por palavra, letreiro rolando, grifar, trocar a palavra">
+  <img src="versoes/documental/assets/dicionario-4-formas-e-transicoes.gif" width="49%" alt="Formas e transições: traço se desenhando, revelar por máscara, cortina, zoom de impacto, barra crescendo, uma forma vira outra">
 </p>
+
+**Nesta página:** [Três jeitos de usar](#três-jeitos-de-usar) · [Os 24 efeitos](#os-24-efeitos) · [Receitas pra canal dark](#receitas-pra-canal-dark) · [Instalação](#instalação) · [Versões](#versões)
 
 ## Três jeitos de usar
 
 1. **Só consultar.** Achou o efeito na tabela, copia o exemplo de pedido e cola no seu Claude, ChatGPT, Codex ou Cursor.
 2. **Instalar a skill no Claude Code.** Aí você pode pedir do seu jeito ("faz o número quicar", "entra um depois do outro") que ele entende qual é o efeito e já usa a duração e a aceleração certas. Veja [Instalação](#instalação).
-3. **Colar a tabela no seu projeto.** Em outras ferramentas, copie o conteúdo de [`skills/dicionario-de-motion/SKILL.md`](skills/dicionario-de-motion/SKILL.md) para o arquivo de instruções do projeto (por exemplo, `AGENTS.md` ou as regras do Cursor).
+3. **Colar a tabela no seu projeto.** Em outras ferramentas, copie o conteúdo de [`SKILL.md`](versoes/documental/dicionario-de-motion-documental/SKILL.md) para o arquivo de instruções do projeto (por exemplo, `AGENTS.md` ou as regras do Cursor).
 
 ## Os 24 efeitos
 
@@ -86,17 +92,29 @@ Cena típica de vídeo de curiosidade, história ou documentário, e a combinaç
 
 ## Instalação
 
+**Baixar sem usar git:** vá em [Releases](https://github.com/apenasdouglas/ai-motion-dictionary/releases), baixe o `.zip` da versão que você quer e descompacte.
+
 **Claude Code, pra você em todos os projetos:**
 
 ```bash
-git clone https://github.com/apenasdouglas/dicionario-de-motion.git
+git clone https://github.com/apenasdouglas/ai-motion-dictionary.git
 mkdir -p ~/.claude/skills
-cp -r dicionario-de-motion/skills/dicionario-de-motion ~/.claude/skills/
+cp -r ai-motion-dictionary/versoes/documental/dicionario-de-motion-documental ~/.claude/skills/
 ```
 
-**Só num projeto:** copie a pasta `skills/dicionario-de-motion` para `.claude/skills/` dentro do projeto.
+**Só num projeto:** copie a pasta `versoes/documental/dicionario-de-motion-documental` para `.claude/skills/` dentro do projeto.
 
 Depois é só pedir animação do seu jeito. Quando o pedido for vago, a skill propõe 2 ou 3 efeitos pelo nome antes de animar.
+
+## Versões
+
+Cada versão é um dicionário com exemplos e receitas pra um tipo de conteúdo. As skills têm nomes diferentes, então dá pra instalar mais de uma.
+
+| Versão | Pra quem | Pasta | Skill |
+|---|---|---|---|
+| **Documental** | canal dark de curiosidades, história, mistério, ciência e documentário | [`versoes/documental`](versoes/documental) | `dicionario-de-motion-documental` |
+
+Novas versões saem aqui e no [@douglasjanuario](https://x.com/douglasjanuario).
 
 ## Créditos
 
