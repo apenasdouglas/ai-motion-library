@@ -1,4 +1,4 @@
-# Dicionário de Motion apenasdouglas · efeitos de animação pra pedir pra IA
+# Biblioteca de Motion apenasdouglas · efeitos de animação pra pedir pra IA
 
 **[English](README.en.md)** · **Versão atual: Documental**
 
@@ -8,22 +8,37 @@ Pedir pra IA "faz uma animação bonita" não funciona. Ela precisa saber o nome
 
 Aqui estão **24 efeitos de motion graphics** com o nome em português, o termo que você usa no pedido e um exemplo pronto pra copiar, mais **receitas por cena** e uma **skill pro Claude Code**. Foi pensado pra quem tem ou quer ter um **canal dark no YouTube** (faceless, sem aparecer) de curiosidades, história, mistério, ciência ou documentário, e precisa que o vídeo tenha movimento sem contratar um editor de motion. Os vídeos desta página também foram feitos pela IA.
 
+**Tema escuro**
+
 <p>
-  <img src="versoes/documental/assets/dicionario-1-entradas.gif" width="49%" alt="Entradas: surgir, deslizar, aparecer com salto, crescer, do borrado ao nítido, cascata">
-  <img src="versoes/documental/assets/dicionario-2-ritmo.gif" width="49%" alt="Ritmo: passa do ponto e volta, quicar, mola, acelera e freia, elástico, pulsar">
+  <img src="versoes/documental/assets/escuro/biblioteca-1-entradas.gif" width="49%" alt="Entradas: surgir, deslizar, aparecer com salto, crescer, do borrado ao nítido, cascata">
+  <img src="versoes/documental/assets/escuro/biblioteca-2-ritmo.gif" width="49%" alt="Ritmo: passa do ponto e volta, quicar, mola, acelera e freia, elástico, pulsar">
 </p>
 <p>
-  <img src="versoes/documental/assets/dicionario-3-texto-e-numeros.gif" width="49%" alt="Texto e números: máquina de escrever, número contando, palavra por palavra, letreiro rolando, grifar, trocar a palavra">
-  <img src="versoes/documental/assets/dicionario-4-formas-e-transicoes.gif" width="49%" alt="Formas e transições: traço se desenhando, revelar por máscara, cortina, zoom de impacto, barra crescendo, uma forma vira outra">
+  <img src="versoes/documental/assets/escuro/biblioteca-3-texto-e-numeros.gif" width="49%" alt="Texto e números: máquina de escrever, número contando, palavra por palavra, letreiro rolando, grifar, trocar a palavra">
+  <img src="versoes/documental/assets/escuro/biblioteca-4-formas-e-transicoes.gif" width="49%" alt="Formas e transições: traço se desenhando, revelar por máscara, cortina, zoom de impacto, barra crescendo, uma forma vira outra">
 </p>
 
-**Nesta página:** [Três jeitos de usar](#três-jeitos-de-usar) · [Os 24 efeitos](#os-24-efeitos) · [Receitas pra canal dark](#receitas-pra-canal-dark) · [Instalação](#instalação) · [Versões](#versões)
+**Tema claro**
+
+<p>
+  <img src="versoes/documental/assets/claro/biblioteca-1-entradas.gif" width="49%" alt="Tema claro, entradas">
+  <img src="versoes/documental/assets/claro/biblioteca-2-ritmo.gif" width="49%" alt="Tema claro, ritmo">
+</p>
+<p>
+  <img src="versoes/documental/assets/claro/biblioteca-3-texto-e-numeros.gif" width="49%" alt="Tema claro, texto e números">
+  <img src="versoes/documental/assets/claro/biblioteca-4-formas-e-transicoes.gif" width="49%" alt="Tema claro, formas e transições">
+</p>
+
+A cor e o tema são seus: vermelho e escuro são só o padrão. Veja [Cor e tema](#cor-e-tema).
+
+**Nesta página:** [Três jeitos de usar](#três-jeitos-de-usar) · [Os 24 efeitos](#os-24-efeitos) · [Receitas pra canal dark](#receitas-pra-canal-dark) · [Cor e tema](#cor-e-tema) · [Instalação](#instalação) · [Versões](#versões)
 
 ## Três jeitos de usar
 
 1. **Só consultar.** Achou o efeito na tabela, copia o exemplo de pedido e cola no seu Claude, ChatGPT, Codex ou Cursor.
 2. **Instalar a skill no Claude Code.** Aí você pode pedir do seu jeito ("faz o número quicar", "entra um depois do outro") que ele entende qual é o efeito e já usa a duração e a aceleração certas. Veja [Instalação](#instalação).
-3. **Colar a tabela no seu projeto.** Em outras ferramentas, copie o conteúdo de [`SKILL.md`](versoes/documental/dicionario-de-motion-documental/SKILL.md) para o arquivo de instruções do projeto (por exemplo, `AGENTS.md` ou as regras do Cursor).
+3. **Colar a tabela no seu projeto.** Em outras ferramentas, copie o conteúdo de [`SKILL.md`](versoes/documental/biblioteca-de-motion-documental/SKILL.md) para o arquivo de instruções do projeto (por exemplo, `AGENTS.md` ou as regras do Cursor).
 
 ## Os 24 efeitos
 
@@ -90,36 +105,50 @@ Cena típica de vídeo de curiosidade, história ou documentário, e a combinaç
 
 **Fora da lista, o mais usado em documentário:** zoom lento numa foto parada, o efeito Ken Burns. Pedido: "faz um Ken Burns lento na foto, aproximando uns 5% em 6 s".
 
+## Cor e tema
+
+Os vídeos acima usam vermelho (`#E5352A`) em dois temas, escuro e claro. No seu vídeo, a cor é a da sua marca. Com a skill instalada, você escolhe de três jeitos:
+
+| Jeito | Exemplo |
+|---|---|
+| Pelo nome da cor | "usa azul e tema claro" |
+| Pelo hexadecimal | "usa a cor `#2F6FED`" |
+| Pelo comando da skill | `/biblioteca-de-motion-documental cor #2F6FED tema claro` |
+
+Cores com nome que a skill já conhece: vermelho `#E5352A`, azul `#2F6FED`, verde `#1F9D60`, amarelo `#E2A925`, laranja `#EE6A24`, roxo `#7C4DFF`. Qualquer outra entra pelo hexadecimal.
+
+**Tema escuro:** fundo `#0E1110`, bom pra mistério, espaço e crime. **Tema claro:** fundo creme, bom pra história, cultura e ciência.
+
 ## Instalação
 
-**Baixar sem usar git:** vá em [Releases](https://github.com/apenasdouglas/ai-motion-dictionary/releases), baixe o `.zip` da versão que você quer e descompacte.
+**Baixar sem usar git:** vá em [Releases](https://github.com/apenasdouglas/ai-motion-library/releases), baixe o `.zip` da versão que você quer e descompacte.
 
 **Claude Code, pra você em todos os projetos:**
 
 ```bash
-git clone https://github.com/apenasdouglas/ai-motion-dictionary.git
+git clone https://github.com/apenasdouglas/ai-motion-library.git
 mkdir -p ~/.claude/skills
-cp -r ai-motion-dictionary/versoes/documental/dicionario-de-motion-documental ~/.claude/skills/
+cp -r ai-motion-library/versoes/documental/biblioteca-de-motion-documental ~/.claude/skills/
 ```
 
-**Só num projeto:** copie a pasta `versoes/documental/dicionario-de-motion-documental` para `.claude/skills/` dentro do projeto.
+**Só num projeto:** copie a pasta `versoes/documental/biblioteca-de-motion-documental` para `.claude/skills/` dentro do projeto.
 
 Depois é só pedir animação do seu jeito. Quando o pedido for vago, a skill propõe 2 ou 3 efeitos pelo nome antes de animar.
 
 ## Versões
 
-Cada versão é um dicionário com exemplos e receitas pra um tipo de conteúdo. As skills têm nomes diferentes, então dá pra instalar mais de uma.
+Cada versão é uma biblioteca com exemplos e receitas pra um tipo de conteúdo. As skills têm nomes diferentes, então dá pra instalar mais de uma.
 
 | Versão | Pra quem | Pasta | Skill |
 |---|---|---|---|
-| **Documental** | canal dark de curiosidades, história, mistério, ciência e documentário | [`versoes/documental`](versoes/documental) | `dicionario-de-motion-documental` |
+| **Documental** | canal dark de curiosidades, história, mistério, ciência e documentário | [`versoes/documental`](versoes/documental) | `biblioteca-de-motion-documental` |
 
 Novas versões saem aqui e no [@douglasjanuario](https://x.com/douglasjanuario).
 
 ## Créditos
 
 - Ideia inspirada no catálogo de efeitos de motion do [@showheyohtaki](https://x.com/showheyohtaki), em japonês.
-- Feito por Douglas Januário ([@douglasjanuario](https://x.com/douglasjanuario) no X). Os vídeos de demonstração foram gerados com IA usando o [HyperFrames](https://hyperframes.heygen.com), da HeyGen.
+- Feito por Douglas Januário ([@douglasjanuario](https://x.com/douglasjanuario) no X). Os vídeos de demonstração foram gerados com IA usando o [HyperFrames](https://hyperframes.heygen.com), da HeyGen, com as fontes Playfair Display e Inter (licença OFL).
 
 ## Licença
 
