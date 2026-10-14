@@ -1,9 +1,9 @@
 ---
-name: dicionario-de-motion
-description: Traduz pedidos de animação em português ("faz o número quicar", "entra um depois do outro", "dá um tranco no zoom") para o efeito de motion graphics certo, com o termo técnico, a duração e a aceleração. Use sempre que o usuário pedir animação, motion, transição ou efeito em vídeo, HTML, CSS, GSAP, Remotion, HyperFrames ou After Effects, principalmente quando o pedido for vago ("faz uma animação bonita") ou o vídeo for de canal dark (faceless) de curiosidades, história ou documentário.
+name: dicionario-de-motion-documental
+description: Traduz pedidos de animação em português ("faz o número quicar", "entra um depois do outro", "dá um tranco no zoom") para o efeito de motion graphics certo, com o termo técnico, a duração e a aceleração. Use sempre que o usuário pedir animação, motion, transição ou efeito em vídeo, HTML, CSS, GSAP, Remotion, HyperFrames ou After Effects, principalmente quando o pedido for vago ("faz uma animação bonita") ou o vídeo for de canal dark (faceless) de curiosidades, história ou documentário. Also triggers on English requests for motion graphics, easing and animation effects in documentary or faceless YouTube videos.
 ---
 
-# Dicionário de motion
+# Dicionário de Motion DJ · Versão Documental
 
 Quem pede animação em português raramente usa o nome técnico do efeito. Esta skill faz a ponte: identifica o efeito pelo jeito que a pessoa fala, aplica o termo certo e usa parâmetros que funcionam de primeira.
 
