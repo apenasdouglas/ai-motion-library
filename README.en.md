@@ -1,4 +1,4 @@
-# DJ Motion Dictionary · animation effects to ask AI for
+# apenasdouglas Motion Dictionary · animation effects to ask AI for
 
 **[Português](README.md)** · **Current version: Documentary (Documental)**
 
